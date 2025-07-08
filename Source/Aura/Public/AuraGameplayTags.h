@@ -14,6 +14,7 @@
  *
  * Singleton containing native Gameplay Tags
  */
+/*
 struct FAuraGameplayTags
 {
 public:
@@ -40,6 +41,7 @@ private:
 	static FAuraGameplayTags GameplayTags;
 };
 // Singleton boilerplate end
+*/
 
 /*
  *	AuraGameplayTags
@@ -47,7 +49,7 @@ private:
  *	New implementation with macros.
  *	
  */
-/*
+
 namespace AuraGameplayTags
 {
 	// Primary
@@ -71,4 +73,4 @@ namespace AuraGameplayTags
 	// Vitals
 	UE_DECLARE_GAMEPLAY_TAG_EXTERN(Attributes_Vitals_Health);
 	UE_DECLARE_GAMEPLAY_TAG_EXTERN(Attributes_Vitals_Mana);
-}*/
+}

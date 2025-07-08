@@ -19,5 +19,5 @@ void UAuraAssetManager::StartInitialLoading()
 
 	// Load native tags
 	// TODO: This will be deprecated after we replace GameplayTags singleton with tags macro
-	FAuraGameplayTags::InitializeNativeGameplayTags();
+	//FAuraGameplayTags::InitializeNativeGameplayTags();
 }

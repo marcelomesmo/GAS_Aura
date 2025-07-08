@@ -24,13 +24,17 @@ public:
 	virtual void BindCallbacksToDependencies() override;
 	virtual void BroadCastInitialValues() override;
 
+	// MessageRow delegate
 	UPROPERTY(BlueprintAssignable, Category="GAS|Attributes")
 	FAttributeInfoSignature AttributeInfoDelegate;
 
 protected:
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Widget Data")
 	TObjectPtr<UAttributeInfo> AttributeInfo;
 
 private:
-	void BroadcastAttributeInfo(const FGameplayTag& AttributeTag, const FGameplayAttribute& Attribute);
+	//void BroadcastAttributeInfo(const FGameplayTag& AttributeTag, const FGameplayAttribute& Attribute);
+
+	// Helper function to broadcast attributes
+	void BroadcastAttributeInfo(const FAuraAttributeInfo& Info) const;
 };

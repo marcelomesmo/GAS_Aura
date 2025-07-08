@@ -3,14 +3,13 @@
 
 #include "AuraGameplayTags.h"
 #include "GameplayTagsManager.h"
-
+/*
 FAuraGameplayTags FAuraGameplayTags::GameplayTags;
 
 void FAuraGameplayTags::InitializeNativeGameplayTags()
 {
-	/*
-	 * Primary Attributes
-	 */
+
+	// Primary Attributes
 	GameplayTags.Attributes_Primary_Strength = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("Attributes.Primary.Strength"), FString("Increases physical damage")
 		);
@@ -26,9 +25,8 @@ void FAuraGameplayTags::InitializeNativeGameplayTags()
 	GameplayTags.Attributes_Primary_Vigor = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("Attributes.Primary.Vigor"), FString("Increases Health")
 		);
-	/*
-	 * Secondary Attributes
-	 */
+
+	// Secondary Attributes
 	GameplayTags.Attributes_Secondary_Armor = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("Attributes.Secondary.Armor"),
 		FString("Reduces damage taken, improves Block Chance")
@@ -78,10 +76,11 @@ void FAuraGameplayTags::InitializeNativeGameplayTags()
 		FName("Attributes.Secondary.MaxMana"),
 		FString("Maximum amount of Mana obtainable")
 		);
-}
-/*
+}*/
+
 namespace AuraGameplayTags
 {
+	// Maybe can replace this with a macro
 	// Primary
 	UE_DEFINE_GAMEPLAY_TAG(Attributes_Primary_Strength, "Attributes.Primary.Strength");
 	UE_DEFINE_GAMEPLAY_TAG(Attributes_Primary_Intelligence, "Attributes.Primary.Intelligence");
@@ -103,4 +102,4 @@ namespace AuraGameplayTags
 	// Vitals
 	UE_DEFINE_GAMEPLAY_TAG(Attributes_Vitals_Health, "Attributes.Vitals.Health");
 	UE_DEFINE_GAMEPLAY_TAG(Attributes_Vitals_Mana, "Attributes.Vitals.Mana");
-}*/
+}
